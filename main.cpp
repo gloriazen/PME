@@ -23,7 +23,7 @@ void fun_prova_get_path(){
 
 void fun_prova_resize_gpu(){
 
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "Hello, World !" << std::endl;
     Mat inputCpu = imread("../../imgs/lena.jpg",CV_LOAD_IMAGE_COLOR);
     cuda::GpuMat input(inputCpu);
 
@@ -113,6 +113,7 @@ void fun_prova_remap_gpu(){
 
 int main() {
 
+    cout << " Hello ";
     fun_prova_resize_gpu();
 
     fun_prova_remap_gpu();
